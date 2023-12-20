@@ -225,7 +225,7 @@ ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
 
 ZMK_LAYER(base,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp C         &kp B         &kp H         &kp G         &kp K            &comma_morph  &dot_morph    &kp SQT       &kp J         &kp K        
+     &kp C         &kp B         &kp H         &kp G         &kp K            &comma_morph  &dot_morph    &kp SQT       &kp J         &lt M FN            
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &hml LGUI P   &hml LALT S   &hml LCTRL N  &hml LSHFT T  &kp V            &kp MINUS     &hmr RSHFT A  &hmr LCTRL E  &hmr LALT I   &hmr LGUI W  
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
