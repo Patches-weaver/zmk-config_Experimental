@@ -2,7 +2,7 @@
 
 ## Layout
 
-##![]("../zmk-config_Experimental\keymap-drawer\my_keymap.png) 
+##![](my_keymap.png) 
 
 ## Links:  Repos, etc.
 
