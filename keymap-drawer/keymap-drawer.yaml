@@ -1,0 +1,134 @@
+layout:
+  ortho_layout: {split: true, rows: 3, columns: 5, thumbs: 2, drop_pinky: true, drop_inner: true}
+layers:
+  default:
+  - C
+  - B
+  - H
+  - G
+  - K
+  - ','
+  - .
+  - "'"
+  - J
+  - M
+  - {t: P, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: N, h: LCTRL}
+  - {t: T, h: LSHFT}
+  - V
+  - '-'
+  - {t: A, h: RSHFT}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RALT}
+  - {t: W, h: RGUI}
+  - F
+  - L
+  - D
+  - U
+  - O
+  - Y
+  - {t: RET, h: fn}
+  - R
+  - {t: SPACE, h: nav}
+  - "SMART SHIFT"
+  nav:
+  - "XXX"
+  - SPACE
+  - TAB
+  - "SWAP"
+  - {t: ▽, type: trans}
+  - PG UP
+  - BSP
+  - UP
+  - DEL
+  - {t: ▽, type: trans}
+  - "SK LSHFT"
+  - "SK LCTRL"
+  - "SK LALT"
+  - "SK LGUI"
+  - {t: ▽, type: trans}
+  - PG DN
+  - LEFT
+  - DOWN
+  - RIGHT
+  - RET
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - TAB
+  - "???"
+  - "???"
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - "CANCEL"
+  num:
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: 0, h: LSHFT}
+  - {t: 4, h: LCTRL}
+  - {t: 5, h: LALT}
+  - {t: 6, h: LGUI}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  sym:
+  - '{'
+  - LS(7)
+  - LS(8)
+  - LS(9)
+  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ':'
+  - LS(4)
+  - LS(5)
+  - LS(6)
+  - +
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(1)
+  - LS(2)
+  - LS(3)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(0)
+  - _
+  - {t: ▽, type: trans}
+  - {type: held}
+combos:
+- p: [2, 3]
+  k: Q
+- p: [20, 21]
+  k: N
+- p: [21, 22]
+  k: Z
