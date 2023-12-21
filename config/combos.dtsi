@@ -78,4 +78,4 @@ ZMK_COMBO(fslh,  &kp FSLH,      RM2 RB2,     DEF NAV NUM, COMBO_TERM_SLOW)
 
 
 /* Alpha combos */
-ZMK_COMBO(z,   &kp Z,       LB2 LB1,         DEF    BASE, COMBO_TERM_FAST)
+// ZMK_COMBO(z,   &kp Z,       LB2 LB1,         DEF    BASE, COMBO_TERM_FAST)
