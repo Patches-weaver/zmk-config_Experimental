@@ -2,7 +2,7 @@
 
 ## Layout
 
-![](my_keymap.png) 
+![](my_keymap2.png) 
 
 ## Links:  Repos, etc.
 
