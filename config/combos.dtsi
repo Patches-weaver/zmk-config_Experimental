@@ -87,3 +87,7 @@ ZMK_COMBO(symlayer, &mo SYM,    LH0 RH0,     DEF        , COMBO_TERM_SLOW)
 
 /* Both hands */
 //ZMK_COMBO(save, &mo SYM,    LH0 RH0,     DEF        , COMBO_TERM_SLOW)
+
+
+ZMK_COMBO(q,   &kp Q,           LT2 LT1,     DEF NAV NUM, COMBO_TERM_SLOW)
+
