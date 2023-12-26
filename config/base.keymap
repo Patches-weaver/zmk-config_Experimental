@@ -20,6 +20,7 @@
 #define MOUSE 6
 #define SYM 7
 #define APPS 8
+#define WIN 9
 
 #include "combos.dtsi"  // requires layer aliases
 #include "mouse.dtsi"
@@ -221,10 +222,18 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
 #define UNDO        &kp LC(Z)
+#define REDO        &kp LC(Y)
+
 
 // app aliases
 #define EVTHNG      &kp LC(LA(E))             // Everything app
 #define KEYPIR      &kp LA(SPACE)             // Keypirinha app
+
+// modify windows
+#define WIN_CLOSE   &kp LA(F4)                // close window
+#define WIN_MIN     &kp LG(DOWN)              // minimize window
+#define SHW_DSKTP   &kp LC(D)                 // show desktop
+#define SNIP        &kp LG((LS(S)))           // windows snip tool
 
 
 /* Keymap */
@@ -235,7 +244,7 @@ ZMK_LAYER(base,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp C         &kp B         &kp H         &kp G         &kp K            &comma_morph  &dot_morph    &kp SQT       &kp J         &kp M        
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LGUI P   &hml LALT S   &hml LCTRL N  &hml LSHFT T  &kp V            &kp MINUS     &hmr RSHFT A  &hmr LCTRL E  &hmr LALT I   &hmr LGUI W  
+     &hml LGUI P   &hml LALT S   &hml LCTRL N  &hml LSHFT T  &kp V            &lt win MINUS     &hmr RSHFT A  &hmr LCTRL E  &hmr LALT I   &hmr LGUI W  
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp F         &lt SYM L     &kp D                                        &lt NUM U     &lt SYM O     &lt APPS Y                     
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -259,7 +268,7 @@ ZMK_LAYER(fn,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp F12       &kp F7        &kp F8        &kp F9        &copy_cut        UNDO          &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    &win_sleep   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 &kp LS(INS)      ___           DSK_PREV      VOL_DOWN      DSK_NEXT      ___          
+     &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 &kp LS(INS)      REDO          DSK_PREV      VOL_DOWN      DSK_NEXT      ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp F1        &kp F2        &kp F3                                       PIN_APP       PIN_WIN       DSK_MGR             
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -339,6 +348,18 @@ ZMK_LAYER(apps,
 //                                           ╰─────────────┴─────────────╯  ╰─────────────┴─────────────╯                                          
 )
 
+ZMK_LAYER(win,
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+      ___           WIN_CLOSE     ___           ___           ___              ___           ___           ___           ___           ___          
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+      ___           SNIP          ___           ___           ___              ___           ___           ___           ___           ___          
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                    ___           WIN_MIN       SHW_DSKTP                                    ___           ___           ___           
+// ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                ___           ___              ___           ___                                                    
+//                                           ╰─────────────┴─────────────╯  ╰─────────────┴─────────────╯                                          
+)
+
 // ZMK_LAYER(BLANK,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //      ___           ___           ___           ___           ___              ___           ___           ___           ___           ___          
@@ -352,3 +373,8 @@ ZMK_LAYER(apps,
 // )
 
 /* vim: set ft=c tw=174: */
+
+#define WIN_CLOSE   &kp LA(F4)                // close window
+#define WIN_MIN     &kp LG(DOWN)              // minimize window
+#define SHW_DSKTP   &kp LC(D)                 // show desktop
+#define SNIP  
