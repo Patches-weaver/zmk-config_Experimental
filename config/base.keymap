@@ -373,8 +373,3 @@ ZMK_LAYER(win,
 // )
 
 /* vim: set ft=c tw=174: */
-
-#define WIN_CLOSE   &kp LA(F4)                // close window
-#define WIN_MIN     &kp LG(DOWN)              // minimize window
-#define SHW_DSKTP   &kp LC(D)                 // show desktop
-#define SNIP  
