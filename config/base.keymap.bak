@@ -97,15 +97,15 @@ ZMK_BEHAVIOR(mt_end,  hold_tap,  bindings = <&masked_end>, <&kp>; MT_CORE)
         bindings = <BINDING>, <BINDING>; \
         mods = <MODS>; \
     )
-MASK_MODS(masked_home, (LCTRL), &kp HOME)
-MASK_MODS(masked_end,  (LCTRL), &kp END)
+MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
+MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 /* Caps-word, num-word and smart-mouse */
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
 ZMK_BEHAVIOR(smart_shft, mod_morph,
     bindings = <&sk LSHFT>, <&caps_word>;
-    mods = <(LSHIFT)>;
+    mods = <(MOD_LSFT)>;
 )
 &caps_word {  // mods deactivate caps-word, requires PR #1451
     /delete-property/ ignore-modifiers;
@@ -196,8 +196,8 @@ ZMK_BEHAVIOR(dot_spc, macro,
 // tap: backspace | lshft + tap: delete | rshft + tap: shift-delete
 ZMK_BEHAVIOR(bs_del, mod_morph,
     bindings = <&kp BSPC>, <&kp DEL>;
-    mods = <(LSHIFT|RSHIFT)>;
-    keep-mods = <RSHIFT>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    keep-mods = <MOD_RSFT>;
 )
 
 // tap: copy | double-tap: cut
@@ -222,7 +222,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
-#define K_UNDO        &kp LC(Z)
+#define UNDO        &kp LC(Z)
 #define REDO        &kp LC(Y)
 #define VPASTE      &kp LC(V)
 
@@ -242,7 +242,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define MUL         &kp KP_MULTIPLY
 #define MIN         &kp KP_SUBTRACT
 #define PLS         &kp KP_PLUS
-#define EQUAL         &kp KP_PLUS
+#define EQL         &kp KP_PLUS
 
 /* Keymap */
 
@@ -274,7 +274,7 @@ ZMK_LAYER(nav,
 
 ZMK_LAYER(fn,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F12       &kp F7        &kp F8        &kp F9        &copy_cut        K_UNDO          &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    &win_sleep   
+     &kp F12       &kp F7        &kp F8        &kp F9        &copy_cut        UNDO          &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    &win_sleep   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 VPASTE           REDO          DSK_PREV      VOL_DOWN      DSK_NEXT      ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -292,7 +292,7 @@ ZMK_LAYER(num,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp N1        &kp N2        &kp N3                         ___           ___           ___           ___           
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               N0           &num_word        EQUAL           ___                                                    
+                                               N0           &num_word        EQL           ___                                                    
 //                                           ╰─────────────┴─────────────╯  ╰─────────────┴─────────────╯                                          
 )
 
