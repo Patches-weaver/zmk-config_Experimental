@@ -222,7 +222,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
-#define K_UNDO        &kp LC(Z)
+#define K_UNDO      &kp LC(Z)
 #define REDO        &kp LC(Y)
 #define VPASTE      &kp LC(V)
 
@@ -242,7 +242,6 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define MUL         &kp KP_MULTIPLY
 #define MIN         &kp KP_SUBTRACT
 #define PLS         &kp KP_PLUS
-#define EQUAL         &kp KP_PLUS
 
 /* Keymap */
 
