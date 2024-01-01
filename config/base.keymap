@@ -231,7 +231,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 // app aliases
 #define EVTHNG      &kp LC(LA(E))             // Everything app
 #define KEYPIR      &kp LA(SPACE)             // Keypirinha app
-#define LINE        &kp F13                   // Keypirinha app
+#define LINE        &kp LC(LA(E))             // LINE app
 
 // modify windows
 #define WIN_CLOSE   &kp LA(F4)                // close window
@@ -293,7 +293,7 @@ ZMK_LAYER(num,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp N1        &kp N2        &kp N3                         ___           ___           ___           ___           
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &kp N0        &num_word        &kp EQUAL     ___                                                    
+                                               &kp N0        SMART_NUM        &kp EQUAL     ___                                                    
 //                                           ╰─────────────┴─────────────╯  ╰─────────────┴─────────────╯                                          
 )
 
