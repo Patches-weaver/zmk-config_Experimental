@@ -233,6 +233,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define KEYPIR      &kp LA(SPACE)             // Keypirinha app
 #define LINE        &kp LC(LA(L))             // LINE app
 #define CODA        &kp LC(LA(C))             // Coda web app
+#define CODANOW     &kp LC(LA(N))             // Coda web app
+
 
 // modify windows
 #define WIN_CLOSE   &kp LA(F4)                // close window
