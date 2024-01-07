@@ -231,7 +231,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 // app aliases
 #define EVTHNG      &kp LC(LA(E))             // Everything app
 #define KEYPIR      &kp LA(SPACE)             // Keypirinha app
-#define LINE        &kp LC(LA(E))             // LINE app
+#define LINE        &kp LC(LA(L))             // LINE app
 
 // modify windows
 #define WIN_CLOSE   &kp LA(F4)                // close window
