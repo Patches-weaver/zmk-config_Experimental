@@ -236,16 +236,21 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define CODANOW     &kp LC(LA(N))             // Coda web app
 #define FFOX        &kp LC(LA(F))             // Firefox app
 #define TDIST_QADD  &kp LG(LA(Q))             // Todoist quick add task
+#define XYPlorer    &kp LG(LA(Y))             // XYPlorer app
 
 
 
 // modify windows
 #define WIN_MAX     &kp LG(UP)                // maximize window
 #define WIN_MIN     &kp LG(DOWN)              // minimize window
-#define WIN_CLOSE   &kp LA(F4)                // close window
-#define SHW_DSKTP   &kp LC(D)                 // show desktop
+#define WIN_MIN_ALL &kp LG(M)                 // minimize all windows
+#define WIN_MON_L   &kp LG((LS(LEFT)))        // move window to monitor left
+#define WIN_MON_R   &kp LG((LS(RIGHT)))       // move window to monitor right
+#define SHW_DSKTP   &kp LG(D)                 // show desktop
+#define WIN_FOCUS   &kp LG(HOME)              // show desktop
 #define SNIP        &kp LG((LS(S)))           // windows snip tool
-#define SNIPT       &kp LG((LS(T)))           // Powertoys snip OCR tool
+#define SNIPOCR     &kp LG((LS(T)))           // Powertoys snip OCR tool
+#define WIN_CLOSE   &kp LA(F4)                // close window
 
 // keypad aliases
 #define DIV         &kp KP_DIVIDE
@@ -357,9 +362,9 @@ ZMK_LAYER(apps,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      CODA          ___           EVTHNG        KEYPIR        ___              ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           ___           CODANOW       SNIPT          ___              ___          ___           ___           ___           ___          
+     ___           SNIP          CODANOW       TDIST_QADD    ___              ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   FFOX          LINE          ___                                          ___           ___           ___           
+                   FFOX          LINE          ___                                          ___           SNIPOCR       XYPlorer           
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                ___           ___              ___           ___                                                    
 //                                           ╰─────────────┴─────────────╯  ╰─────────────┴─────────────╯                                          
@@ -367,13 +372,13 @@ ZMK_LAYER(apps,
 
 ZMK_LAYER(win,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     ___           WIN_CLOSE     WIN_MAX       ___           ___              ___           ___           ___           ___           ___          
+     ___           WIN_CLOSE     WIN_MAX       ___           ___              ___           ___           ___           ___           WIN_MIN_ALL          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           SNIP          ___           TDIST_QADD    ___              ___           ___           ___           ___           ___          
+     ___           WIN_MON_L     ___           WIN_MON_R     ___              ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   ___           WIN_MIN       SHW_DSKTP                                    ___           ___           ___           
+                   WIN_FOCUS     WIN_MIN       SHW_DSKTP                                    ___           ___           ___                             
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                ___           ___              ___           ___                                                    
+                                                ___          ___              ___           ___                                                    
 //                                           ╰─────────────┴─────────────╯  ╰─────────────┴─────────────╯                                          
 )
 
