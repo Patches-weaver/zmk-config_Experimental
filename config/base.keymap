@@ -236,6 +236,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define CODA        &kp LC(LA(C))             // Coda web app
 #define CODANOW     &kp LC(LA(N))             // Coda web app
 #define FFOX        &kp LC(LA(F))             // Firefox app
+#define NotePad     &kp LC(LA(F))             // Notepad app
 #define VSCODE      &kp LC(LA(V))             // Firefox app
 #define TDIST_QADD  &kp LG(LA(Q))             // Todoist quick add task
 #define XYPlorer    &kp LG(LA(Y))             // XYPlorer app
@@ -364,7 +365,7 @@ ZMK_LAYER(apps,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      CODA          ___           EVTHNG        KEYPIR        ___              ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           SNIP          CODANOW       TDIST_QADD    VSCODE           ___           ___           ___           ___           ___          
+     ___           SNIP          NotePad       TDIST_QADD    VSCODE           ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    FFOX          LINE          ___                                          ___           SNIPOCR       XYPlorer           
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
