@@ -167,7 +167,7 @@ ZMK_BEHAVIOR(uc_shift, macro,
 
 // tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
 SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
-SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
+SIMPLE_MORPH( comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
 
 // tap: dot | shift + tap: colon | ctrl + shift + tap: >
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
@@ -232,9 +232,11 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define EVTHNG      &kp LC(LA(E))             // Everything app
 #define KEYPIR      &kp LA(SPACE)             // Keypirinha app
 #define LINE        &kp LC(LA(L))             // LINE app
+#define Chome       &kp LC(LA(R))             // LINE app
 #define CODA        &kp LC(LA(C))             // Coda web app
 #define CODANOW     &kp LC(LA(N))             // Coda web app
 #define FFOX        &kp LC(LA(F))             // Firefox app
+#define VSCODE      &kp LC(LA(V))             // Firefox app
 #define TDIST_QADD  &kp LG(LA(Q))             // Todoist quick add task
 #define XYPlorer    &kp LG(LA(Y))             // XYPlorer app
 
@@ -362,7 +364,7 @@ ZMK_LAYER(apps,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      CODA          ___           EVTHNG        KEYPIR        ___              ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           SNIP          CODANOW       TDIST_QADD    ___              ___           ___           ___           ___           ___          
+     ___           SNIP          CODANOW       TDIST_QADD    VSCODE           ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    FFOX          LINE          ___                                          ___           SNIPOCR       XYPlorer           
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -374,7 +376,7 @@ ZMK_LAYER(win,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      ___           WIN_CLOSE     WIN_MAX       ___           ___              ___           ___           ___           ___           WIN_MIN_ALL          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           WIN_MON_L     ___           WIN_MON_R     ___              ___           ___           ___           ___           ___          
+     ___           WIN_MON_L     &swapper      WIN_MON_R     ___              ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    WIN_FOCUS     WIN_MIN       SHW_DSKTP                                    ___           ___           ___                             
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
