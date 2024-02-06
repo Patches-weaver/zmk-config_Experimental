@@ -238,7 +238,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define FFOX        &kp LC(LA(F))             // Firefox app
 #define NotePad     &kp LC(LA(F))             // Notepad app
 #define VSCODE      &kp LC(LA(V))             // Firefox app
-#define TDIST       &kp LG(LA(Q))             // Todoist quick add task
+#define TDIST       &kp LG(LA(T))             // Todoist quick add task
 #define TDIST_QADD  &kp LG(LA(Q))             // Todoist quick add task
 #define XYPlorer    &kp LG(LA(Y))             // XYPlorer app
 #define Word        &kp LG(LA(W))             // MS Word app
