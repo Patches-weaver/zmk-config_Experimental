@@ -242,6 +242,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define TDIST_QADD  &kp LG(LA(Q))             // Todoist quick add task
 #define XYPlorer    &kp LG(LA(Y))             // XYPlorer app
 #define Word        &kp LG(LA(W))             // MS Word app
+#define Emeditor    &kp LG(LA(M))             // Emeditor app
+#define Spacemacs   &kp LG(LA(E))             // Smacemacs app
  
 
 
@@ -365,9 +367,9 @@ ZMK_LAYER(sym,
 
 ZMK_LAYER(apps,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     CODA          ___           EVTHNG        TDIST_QADD    ___              ___           ___           ___           ___           ___          
+     CODA          ___           EVTHNG        TDIST_QADD    ___              ___           ___           ___           ___           Emeditor          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           SNIP          NotePad       TDIST_QADD    VSCODE           ___           ___           ___           ___           Word          
+     ___           SNIP          NotePad       ___           VSCODE           ___           ___           Spacemacs     ___           Word          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    FFOX          LINE          ___                                          ___           SNIPOCR       XYPlorer           
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
