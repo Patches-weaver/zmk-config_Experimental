@@ -240,10 +240,10 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define VSCODE      &kp LC(LA(V))             // Firefox app
 #define TDIST       &kp LG(LA(T))             // Todoist quick add task
 #define TDIST_QADD  &kp LG(LA(Q))             // Todoist quick add task
-#define XYPlorer    &kp LG(LA(Y))             // XYPlorer app
-#define Word        &kp LG(LA(W))             // MS Word app
-#define Emeditor    &kp LG(LA(M))             // Emeditor app
-#define Spacemacs   &kp LG(LA(E))             // Smacemacs app
+#define XYPlorer    &kp LC(LA(Y))             // XYPlorer app
+#define Word        &kp LC(LA(W))             // MS Word app
+#define Emeditor    &kp LC(LA(M))             // Emeditor app
+#define Spacemacs   &kp LC(LA(E))             // Smacemacs app
  
 
 
@@ -282,7 +282,7 @@ ZMK_LAYER(base,
 )
 
 ZMK_LAYER(nav,
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮<>
      &kp ESC       &kp LS(TAB)   &kp TAB       &kp SPACE     ___              &kp HOME      NAV_BSPC      NAV_UP        NAV_DEL       &kp PG_UP          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     ___              &kp END       NAV_LEFT      NAV_DOWN      NAV_RIGHT     &kp PG_DN      
