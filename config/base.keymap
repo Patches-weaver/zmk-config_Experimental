@@ -234,9 +234,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define LINE        &kp LC(LA(L))             // LINE app
 #define Chome       &kp LC(LA(R))             // LINE app
 #define CODA        &kp LC(LA(C))             // Coda web app
-#define CODANOW     &kp LC(LA(N))             // Coda web app
 #define FFOX        &kp LC(LA(F))             // Firefox app
-#define NotePad     &kp LC(LA(F))             // Notepad app
+#define NotePad     &kp LC(LA(N))             // Notepad app
 #define VSCODE      &kp LC(LA(V))             // Firefox app
 #define TDIST       &kp LG(LA(T))             // Todoist quick add task
 #define TDIST_QADD  &kp LG(LA(Q))             // Todoist quick add task
@@ -244,6 +243,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define Word        &kp LC(LA(W))             // MS Word app
 #define Emeditor    &kp LC(LA(M))             // Emeditor app
 #define Spacemacs   &kp LC(LA(E))             // Smacemacs app
+// #define CODANOW     &kp LC(LA(N))             // Coda web app
  
 
 
