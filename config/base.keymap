@@ -229,7 +229,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 
 
 // app aliases
-#define EVTHNG      &kp LC(LA(E))             // Everything app
+#define EVTHNG      &kp LC(LA(H))             // Everything app
 #define KEYPIR      &kp LA(SPACE)             // Keypirinha app
 #define LINE        &kp LC(LA(L))             // LINE app
 #define Chome       &kp LC(LA(R))             // LINE app
