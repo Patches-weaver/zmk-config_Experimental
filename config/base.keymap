@@ -229,11 +229,9 @@ ZMK_BEHAVIOR(win_sleep, macro,
 
 
 // app aliases
-
 #define TDIST       &kp LG(LA(S))             // Todoist (global)
 #define TDIST_QADD  &kp LG(LA(Q))             // Todoist (global) quick add task
 #define TDIST       &kp LG(LA(T))             // Todoist WIP
-
 
 #define EVTHNG      &kp LC(LA(H))             // Everything app
 #define KEYPIR      &kp LA(SPACE)             // Keypirinha app
