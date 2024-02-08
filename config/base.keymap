@@ -229,6 +229,12 @@ ZMK_BEHAVIOR(win_sleep, macro,
 
 
 // app aliases
+
+#define TDIST       &kp LG(LA(S))             // Todoist (global)
+#define TDIST_QADD  &kp LG(LA(Q))             // Todoist (global) quick add task
+#define TDIST       &kp LG(LA(T))             // Todoist WIP
+
+
 #define EVTHNG      &kp LC(LA(H))             // Everything app
 #define KEYPIR      &kp LA(SPACE)             // Keypirinha app
 #define LINE        &kp LC(LA(L))             // LINE app
@@ -237,8 +243,6 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define FFOX        &kp LC(LA(F))             // Firefox app
 #define NotePad     &kp LC(LA(N))             // Notepad app
 #define VSCODE      &kp LC(LA(V))             // Firefox app
-#define TDIST       &kp LG(LA(T))             // Todoist quick add task
-#define TDIST_QADD  &kp LG(LA(Q))             // Todoist quick add task
 #define XYPlorer    &kp LC(LA(Y))             // XYPlorer app
 #define Word        &kp LC(LA(W))             // MS Word app
 #define Emeditor    &kp LC(LA(M))             // Emeditor app
