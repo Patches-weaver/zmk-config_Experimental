@@ -245,6 +245,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define Word        &kp LC(LA(W))             // MS Word app
 #define Emeditor    &kp LC(LA(M))             // Emeditor app
 #define Spacemacs   &kp LC(LA(E))             // Smacemacs app
+#define Discord     &kp LC(LA(D))             // Discord app
 // #define CODANOW     &kp LC(LA(N))             // Coda web app
  
 
@@ -373,7 +374,7 @@ ZMK_LAYER(apps,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      ___           SNIP          NotePad       ___           VSCODE           ___           ___           Spacemacs     ___           Word          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   FFOX          LINE          ___                                          ___           SNIPOCR       XYPlorer           
+                   FFOX          LINE          Discord                                      ___           SNIPOCR       XYPlorer           
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                ___           ___              ___           ___                                                    
 //                                           ╰─────────────┴─────────────╯  ╰─────────────┴─────────────╯                                          
