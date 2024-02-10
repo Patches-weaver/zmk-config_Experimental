@@ -249,7 +249,6 @@ ZMK_BEHAVIOR(win_sleep, macro,
 // #define CODANOW     &kp LC(LA(N))             // Coda web app
  
 
-
 // modify windows
 #define WIN_MAX     &kp LG(UP)                // maximize window
 #define WIN_MIN     &kp LG(DOWN)              // minimize window
