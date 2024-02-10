@@ -8,8 +8,7 @@
 #endif
 
 #include "../zmk-nodefree-config/helper.h"
-// #include "../zmk-nodefree-config/international_chars/greek.dtsi"
-// #include "../zmk-nodefree-config/international_chars/german.dtsi"
+
 
 #define DEF 0
 #define NAV 1
@@ -25,7 +24,6 @@
 
 #include "combos.dtsi"  // requires layer aliases
 #include "mouse.dtsi"
-#include "extra_keys.h"
 
 #define XXX &none
 #define ___ &trans
@@ -223,15 +221,14 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
-#define UNDO        &kp LC(Z)
-#define REDO        &kp LC(Y)
+#define UNDO1       &kp LC(Z)
+#define REDO1       &kp LC(Y)
 #define VPASTE      &kp LC(V)
 
 
 // app aliases
 #define TDIST       &kp LG(LA(S))             // Todoist (global)
 #define TDIST_QADD  &kp LG(LA(Q))             // Todoist (global) quick add task
-#define TDIST       &kp LG(LA(T))             // Todoist WIP
 
 #define EVTHNG      &kp LC(LA(H))             // Everything app
 #define KEYPIR      &kp LA(SPACE)             // Keypirinha app
@@ -297,9 +294,9 @@ ZMK_LAYER(nav,
 
 ZMK_LAYER(fn,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F12       &kp F7        &kp F8        &kp F9        &copy_cut        UNDO          &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    &win_sleep   
+     &kp F12       &kp F7        &kp F8        &kp F9        &copy_cut        UNDO1         &kp C_PREV    &kp C_VOL_UP  &kp C_NEXT    &win_sleep   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 VPASTE           REDO          DSK_PREV      VOL_DOWN      DSK_NEXT      ___          
+     &hml LGUI F11 &hml LALT F4  &hml LCTRL F5 &hml LSHFT F6 VPASTE           REDO1         DSK_PREV      VOL_DOWN      DSK_NEXT      ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp F1        &kp F2        &kp F3                                       PIN_APP       PIN_WIN       DSK_MGR             
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -393,11 +390,11 @@ ZMK_LAYER(win,
 
 ZMK_LAYER(tools,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp ESC       &copy_cut     ___           VPASTE        ___              ___           ___           ___           ___           ___          
+     &kp ESC       &copy_cut     ___           VPASTE        UNDO1            ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           NAV_BSPC      ___           NAV_DEL       ___              ___           ___           ___           ___           ___          
+     ___           NAV_BSPC      ___           NAV_DEL       REDO1            ___           ___           ___           ___           ___          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   UNDO          ___           REDO                                         ___           ___           ___           
+                   UNDO1         ___           REDO1                                       ___           ___           ___           
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                ___           ___              ___           ___                                                    
 //                                           ╰─────────────┴─────────────╯  ╰─────────────┴─────────────╯                                          
