@@ -252,11 +252,10 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define WIN_MIN_ALL &kp LG(M)                 // minimize all windows
 #define WIN_MON_L   &kp LG((LS(LEFT)))        // move window to monitor left
 #define WIN_MON_R   &kp LG((LS(RIGHT)))       // move window to monitor right
+#define WIN_CLOSE   &kp LA(F4)                // close window
 #define SHW_DSKTP   &kp LG(D)                 // show desktop
 #define WIN_FOCUS   &kp LG(HOME)              // show desktop
 #define SNIP        &kp LG((LS(S)))           // windows snip tool
-#define SNIPOCR     &kp LG((LS(T)))           // Powertoys snip OCR tool
-#define WIN_CLOSE   &kp LA(F4)                // close window
 
 // keypad aliases
 #define DIV         &kp KP_DIVIDE
@@ -368,7 +367,7 @@ ZMK_LAYER(apps,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      CODA          ___           EVTHNG        TDIST_QADD    ___              ___           ___           ___           ___           Emeditor          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ___           SNIP          NotePad       ___           VSCODE           ___           ___           NeoVim     ___           Word          
+     ___           SNIP          NotePad       ___           VSCODE           ___           ___           NeoVim        ___           Word          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    FFOX          LINE          Discord                                      ___           SNIPOCR       XYPlorer           
 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
